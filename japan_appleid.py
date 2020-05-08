@@ -353,14 +353,14 @@ def register(email, passwd):
     print(email, passwd)
     if ym_info and 'DDDD' not in str(ym_info):
         # 姓氏
-        mysql_config2 = {"host": "192.168.14.90",
-                         "port": 3306,
-                         'user': 'root',
-                         "passwd": '123456',
-                         "db": 'apple',
-                         "charset": "utf8"}
-        conn2 = MySQLdb.connect(**mysql_config2)
-        cursor2 = conn2.cursor()
+        # mysql_config2 = {"host": "192.168.14.90",
+        #                  "port": 3306,
+        #                  'user': 'root',
+        #                  "passwd": '123456',
+        #                  "db": 'apple',
+        #                  "charset": "utf8"}
+        # conn2 = MySQLdb.connect(**mysql_config2)
+        # cursor2 = conn2.cursor()
         time.sleep(5)
         try:
             driver.find_element_by_xpath('/html/body/div[2]/aid-web/div[2]/div[2]/div/create-app/aid-create/idms-flow/div/div/div/idms-step/div/div/div/div[2]/div/div/div[2]/div/div[1]/div/div/full-name/div[1]/div/div/last-name-input/div/idms-textbox'
@@ -612,14 +612,16 @@ def register(email, passwd):
                         'answer3': answer3,
                     }
                     json_data = json.dumps(json_data)
-                    try:
-                        # state  激活状态0 注册编辑信息  1 激活
-                        cursor2.execute("insert into apple_japan(apple_id,passwd,json_data,state) values(%s,%s,%s,%s)", (str(email), passwd,json_data,0))
-                        conn2.commit()
-                        print('ok')
-                    except Exception as e:
-                        print(e)
-                        pass
+                    print(json_data)
+                    print(email,passwd)
+                    # try:
+                    #     # state  激活状态0 注册编辑信息  1 激活
+                    #     cursor2.execute("insert into apple_japan(apple_id,passwd,json_data,state) values(%s,%s,%s,%s)", (str(email), passwd,json_data,0))
+                    #     conn2.commit()
+                    #     print('ok')
+                    # except Exception as e:
+                    #     print(e)
+                    #     pass
                     time.sleep(3)
             driver.delete_all_cookies()
             time.sleep(5)
@@ -637,39 +639,19 @@ def register(email, passwd):
 
 if __name__ == '__main__':
     while 1:
-        info = get_email()
-        mysql_config2 = {"host": "192.168.14.90",
-                         "port": 3306,
-                         'user': 'root',
-                         "passwd": '123456',
-                         "db": 'apple',
-                         "charset": "utf8"}
-        conn2 = MySQLdb.connect(**mysql_config2)
-        cursor2 = conn2.cursor()
-        cursor2.execute("select apple_id from apple_japan order by id desc")
-        a_id = cursor2.fetchall()
-        except_num = []
-        id_num = []
+
+        info = [{'email': 'tetatmkspn@outlook.com', 'passwd': 'IEa53cIk'}, {'email': 'deausexyx@outlook.com', 'passwd': '2rL37guT'}, {'email': 'nickeaathx@outlook.com', 'passwd': 'wbG552Bl'}, {'email': 'shuheecrrgl@outlook.com', 'passwd': 'SWq73DUG'}, {'email': 'theteethokngng@outlook.com', 'passwd': 'ouP25vzf'}, {'email': 'thycaikf@outlook.com', 'passwd': '2Am886mR'}, {'email': 'nethitywwpeo@outlook.com', 'passwd': 'CH324Bbo'}, {'email': 'smapsesdeeb@outlook.com', 'passwd': 'SGq838IJ'}, {'email': 'naracrfaib@outlook.com', 'passwd': '7WB25Et3'}, {'email': 'neasmoskikoobx@outlook.com', 'passwd': '2pO30lXr'}, {'email': 'towhoskiiwepn@outlook.com', 'passwd': 'mQa64ShU'}, {'email': 'weyneaukwhd@outlook.com', 'passwd': 'uxW36PMi'}, {'email': 'ceteighwhgr@outlook.com', 'passwd': 'zsE21I8z'}, {'email': 'deseshudjl@outlook.com', 'passwd': 'Otk26K3V'}, {'email': 'dasekneseom@outlook.com', 'passwd': '0rH03ulK'}, {'email': 'lasaevdoom@outlook.com', 'passwd': 'Wou16FIO'}, {'email': 'slesaisi@outlook.com', 'passwd': 'Qe181x1L'}, {'email': 'thalosuuylp@outlook.com', 'passwd': 'H9u87x3g'}, {'email': 'lasetobvxw@outlook.com', 'passwd': '6CC81sLm'}, {'email': 'mcshabeiew@outlook.com', 'passwd': '0k332L9K'}, {'email': 'teaulijxpr@outlook.com', 'passwd': 'A0a10oMT'}, {'email': 'noseendesfaioo@outlook.com', 'passwd': '46O23DjD'}, {'email': 'peausoushdrx@outlook.com', 'passwd': 'aWy52k4x'}, {'email': 'smoatanilp@outlook.com', 'passwd': 'Hxx67uvu'}, {'email': 'seshelhtbif@outlook.com', 'passwd': '0Oy65qhQ'}, {'email': 'feshebmeut@outlook.com', 'passwd': 'ONk47fBu'}, {'email': 'shesayrgjck@outlook.com', 'passwd': '1UN58Vkb'}, {'email': 'lathictbel@outlook.com', 'passwd': 'jhK55WTA'}, {'email': 'mcsothedihw@outlook.com', 'passwd': 'Oo445pMa'}, {'email': 'smecithgufmw@outlook.com', 'passwd': '28e34Mdw'}, {'email': 'tutheasonmvomht@outlook.com', 'passwd': 'jp443weD'}, {'email': 'tisaraslbryoi@outlook.com', 'passwd': '6Vo84POb'}, {'email': 'syteygnbhei@outlook.com', 'passwd': '1S767wYt'}, {'email': 'sheneyifqfb@hotmail.com', 'passwd': 'zfL14Y8L'}, {'email': 'voagesoneupea@hotmail.com', 'passwd': 'P5q25iGj'}, {'email': 'shoonithqjof@hotmail.com', 'passwd': 'fg841uuP'}, {'email': 'sheaslokrxql@hotmail.com', 'passwd': 'ibU56X6W'}, {'email': 'tesitohf@hotmail.com', 'passwd': 'zeH45Hyd'}, {'email': 'dahisleylbaaji@hotmail.com', 'passwd': 'Fqe37KA1'}, {'email': 'thaytulkqyga@hotmail.com', 'passwd': 'PX285aIu'}, {'email': 'mcritejklia@hotmail.com', 'passwd': 'ywc18zT8'}, {'email': 'teaselqsixwf@hotmail.com', 'passwd': 'S6B462rx'}, {'email': 'misethaefajnp@hotmail.com', 'passwd': 'Qni16GIT'}, {'email': 'thesatysunrcb@hotmail.com', 'passwd': 'MUc77Umg'}, {'email': 'tenyhoughjov@hotmail.com', 'passwd': 'Wl975vXO'}, {'email': 'slasoohrbak@hotmail.com', 'passwd': 'daB4075w'}, {'email': 'thousatqxqlf@hotmail.com', 'passwd': 'u4O23hol'}, {'email': 'sesheewwdii@hotmail.com', 'passwd': 'icH30Jjm'}, {'email': 'seytoughthongdl@hotmail.com', 'passwd': 'VqH52fmh'}, {'email': 'shosoughvcelws@hotmail.com', 'passwd': 'kJO57Hhn'}, {'email': 'sloalouyesl@hotmail.com', 'passwd': 'AP981PiU'}, {'email': 'shenaydcng@hotmail.com', 'passwd': 'Mrp766Xm'}]
+
         for i in info:
             email = i.get('email')
             passwd = i.get('passwd')
-            if str(email) in str(a_id):
+            try:
+                start_time = int(time.time())
+                register(email, passwd)
+                restart_process()
+                print('注册需要时间%s' % (int(time.time() - start_time)))
+            except Exception as e:
+                print(e)
                 pass
-            else:
-                try:
-                    id_num.append(passwd)
-                    start_time = int(time.time())
-                    register(email, passwd)
-                    restart_process()
-                    print('注册需要时间%s' % (int(time.time() - start_time)))
-                except Exception as e:
-                    print(e)
-                    except_num.append(str(e))
-                    pass
-                time.sleep(500)
-                if len(except_num) > 5 and len(id_num) > 10:
-                    # 异常超过 5次 办个小时运行一次
-                    print('出现异常，1个小时再运行')
-                    except_num.clear()
-                    id_num.clear()
-                    time.sleep(3600)
+            time.sleep(500)
+
