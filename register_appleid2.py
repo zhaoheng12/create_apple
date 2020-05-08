@@ -683,7 +683,6 @@ whateyoltt@hotmail.com FSk519YY
         # NikaiGilanalH@aol.com----gT2xf772m----iixlcvbcmifgjpiy
 
         info = [
-                {'email': 'whateyoltt@hotmail.com', 'passwd': 'FSk519YY'},
                 {'email': 'seawhoutksdcuq@hotmail.com', 'passwd': 'zvp03xjP'},
                 {'email': 'teaushorrev@hotmail.com', 'passwd': 'KJ176w1c'},
 
@@ -710,4 +709,4 @@ whateyoltt@hotmail.com FSk519YY
             except Exception as e:
                 print(e)
                 pass
-            time.sleep(200)
+            time.sleep(900)
