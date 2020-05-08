@@ -621,10 +621,21 @@ def register(email, passwd):
                         'problem3': '你的父母是在哪里认识的？',
                         'answer3': answer3,
                     }
+
                     print(json_data)
                     print(email)
                     print(passwd)
                     json_data = json.dumps(json_data)
+                    import csv
+
+                    header = ['appleid', 'password', 'info']
+                    data = []
+                    data.append((email, passwd, json_data))
+                    with open('appleid.csv', 'w', encoding='utf-8', newline='') as f:
+                        writer = csv.writer(f)
+                        writer.writerow(header)
+                        writer.writerows(data)
+
                     # try:
                     #     # state  激活状态0 注册编辑信息  1 激活
                     #     cursor2.execute("insert into apple(apple_id,passwd,json_data,state) values(%s,%s,%s,%s)",
@@ -650,9 +661,11 @@ def register(email, passwd):
 if __name__ == '__main__':
     while 1:
         '''
-        ipsethrugy@outlook.com----nUi44eTz
-neaustorya@outlook.com----3l004OIG
-mclefegqsq@outlook.com----SaA0394z
+        35824
+{'problem1': '你少年时代最好的朋友叫什么名字？', 'answer1': 'Emily', 'problem2': '你的理想工作是什么？', 'answer2': '保
+姆', 'problem3': '你的父母是在哪里认识的？', 'answer3': 'Illinois'}
+tishergjabp@hotmail.com
+0Ea30MFk
         '''
         # NikaiGilanalH@aol.com----gT2xf772m----iixlcvbcmifgjpiy
 
