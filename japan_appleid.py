@@ -611,8 +611,9 @@ def register(email, passwd):
                         'problem3': '你的父母是在哪里认识的？',
                         'answer3': answer3,
                     }
-                    json_data = json.dumps(json_data)
                     print(json_data)
+                    json_data = json.dumps(json_data)
+
                     print(email,passwd)
                     # import csv
                     # header = ['appleid', 'password', 'area', 'info']
@@ -657,7 +658,7 @@ tosmeausukvnj@hotmail.com 2Wz13QF1
 
         info = [
 
-            {'email': 'saydoughsnvla@hotmail.com', 'passwd': 'NoW642SL'},
+
             {'email': 'deaseetfyn@hotmail.com', 'passwd': 'Glk40I4E'},
             {'email': 'geighthslts@hotmail.com', 'passwd': 'Uhv7709i'},
             {'email': 'tosmeausukvnj@hotmail.com', 'passwd': '2Wz13QF1'}
@@ -675,5 +676,5 @@ tosmeausukvnj@hotmail.com 2Wz13QF1
             except Exception as e:
                 print(e)
                 pass
-            time.sleep(200)
+            time.sleep(900)
 
