@@ -648,7 +648,7 @@ def register(email, passwd):
 if __name__ == '__main__':
     while 1:
 
-        info = [{'email': 'naracrfaib@outlook.com', 'passwd': '7WB25Et3'}, {'email': 'neasmoskikoobx@outlook.com', 'passwd': '2pO30lXr'}, {'email': 'towhoskiiwepn@outlook.com', 'passwd': 'mQa64ShU'}, {'email': 'weyneaukwhd@outlook.com', 'passwd': 'uxW36PMi'}, {'email': 'ceteighwhgr@outlook.com', 'passwd': 'zsE21I8z'}, {'email': 'deseshudjl@outlook.com', 'passwd': 'Otk26K3V'}, {'email': 'dasekneseom@outlook.com', 'passwd': '0rH03ulK'}, {'email': 'lasaevdoom@outlook.com', 'passwd': 'Wou16FIO'}, {'email': 'slesaisi@outlook.com', 'passwd': 'Qe181x1L'}, {'email': 'thalosuuylp@outlook.com', 'passwd': 'H9u87x3g'}, {'email': 'lasetobvxw@outlook.com', 'passwd': '6CC81sLm'}, {'email': 'mcshabeiew@outlook.com', 'passwd': '0k332L9K'}, {'email': 'teaulijxpr@outlook.com', 'passwd': 'A0a10oMT'}, {'email': 'noseendesfaioo@outlook.com', 'passwd': '46O23DjD'}, {'email': 'peausoushdrx@outlook.com', 'passwd': 'aWy52k4x'}, {'email': 'smoatanilp@outlook.com', 'passwd': 'Hxx67uvu'}, {'email': 'seshelhtbif@outlook.com', 'passwd': '0Oy65qhQ'}, {'email': 'feshebmeut@outlook.com', 'passwd': 'ONk47fBu'}, {'email': 'shesayrgjck@outlook.com', 'passwd': '1UN58Vkb'}, {'email': 'lathictbel@outlook.com', 'passwd': 'jhK55WTA'}, {'email': 'mcsothedihw@outlook.com', 'passwd': 'Oo445pMa'}, {'email': 'smecithgufmw@outlook.com', 'passwd': '28e34Mdw'}, {'email': 'tutheasonmvomht@outlook.com', 'passwd': 'jp443weD'}, {'email': 'tisaraslbryoi@outlook.com', 'passwd': '6Vo84POb'}, {'email': 'syteygnbhei@outlook.com', 'passwd': '1S767wYt'}, {'email': 'sheneyifqfb@hotmail.com', 'passwd': 'zfL14Y8L'}, {'email': 'voagesoneupea@hotmail.com', 'passwd': 'P5q25iGj'}, {'email': 'shoonithqjof@hotmail.com', 'passwd': 'fg841uuP'}, {'email': 'sheaslokrxql@hotmail.com', 'passwd': 'ibU56X6W'}, {'email': 'tesitohf@hotmail.com', 'passwd': 'zeH45Hyd'}, {'email': 'dahisleylbaaji@hotmail.com', 'passwd': 'Fqe37KA1'}, {'email': 'thaytulkqyga@hotmail.com', 'passwd': 'PX285aIu'}, {'email': 'mcritejklia@hotmail.com', 'passwd': 'ywc18zT8'}, {'email': 'teaselqsixwf@hotmail.com', 'passwd': 'S6B462rx'}, {'email': 'misethaefajnp@hotmail.com', 'passwd': 'Qni16GIT'}, {'email': 'thesatysunrcb@hotmail.com', 'passwd': 'MUc77Umg'}, {'email': 'tenyhoughjov@hotmail.com', 'passwd': 'Wl975vXO'}, {'email': 'slasoohrbak@hotmail.com', 'passwd': 'daB4075w'}, {'email': 'thousatqxqlf@hotmail.com', 'passwd': 'u4O23hol'}, {'email': 'sesheewwdii@hotmail.com', 'passwd': 'icH30Jjm'}, {'email': 'seytoughthongdl@hotmail.com', 'passwd': 'VqH52fmh'}, {'email': 'shosoughvcelws@hotmail.com', 'passwd': 'kJO57Hhn'}, {'email': 'sloalouyesl@hotmail.com', 'passwd': 'AP981PiU'}, {'email': 'shenaydcng@hotmail.com', 'passwd': 'Mrp766Xm'}]
+        info = [{'email': 'tetatmkspn@outlook.com', 'passwd': 'IEa53cIk'}, {'email': 'deausexyx@outlook.com', 'passwd': '2rL37guT'}, {'email': 'nickeaathx@outlook.com', 'passwd': 'wbG552Bl'}]
 
         for i in info:
             email = i.get('email')
@@ -656,10 +656,10 @@ if __name__ == '__main__':
             try:
                 start_time = int(time.time())
                 register(email, passwd)
-                restart_process()
+                # restart_process()
                 print('注册需要时间%s' % (int(time.time() - start_time)))
             except Exception as e:
                 print(e)
                 pass
-            time.sleep(500)
+            time.sleep(200)
 
