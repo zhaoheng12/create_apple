@@ -654,8 +654,13 @@ mclefegqsq@outlook.com----SaA0394z
         '''
         # NikaiGilanalH@aol.com----gT2xf772m----iixlcvbcmifgjpiy
 
-        info = [{'email': 'tishergjabp@hotmail.com', 'passwd': '0Ea30MFk'},
-                {'email': 'tasulrmna@hotmail.com', 'passwd': 'XvB125GN'}]
+        info = [
+
+            {'email': 'doosmoezppdb@hotmail.com', 'passwd': 'xyB33sOB'},
+            {'email': 'saydoughsnvla@hotmail.com', 'passwd': 'NoW642SL'},
+            {'email': 'deaseetfyn@hotmail.com', 'passwd': 'hpD63tgK'}
+
+        ]
 
         for i in info:
             email = i.get('email')
