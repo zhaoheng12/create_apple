@@ -297,7 +297,7 @@ def register(email, passwd):
     # 禁用js
     chrome_options.add_argument('--disable-javascript')
     chrome_options.add_argument('accept-encoding="gzip, deflate, br"')
-    chrome_options.add_argument('--proxy-server=http://10.101.30.220:3130')
+    # chrome_options.add_argument('--proxy-server=http://10.101.30.220:3130')
     url = "https://appleid.apple.com/account#!&page=create"
     # driver = webdriver.Chrome(executable_path="D:\\Documents\Downloads\Chrome-bin\chromedriver.exe", chrome_options=chrome_options)
     driver = webdriver.Chrome(
