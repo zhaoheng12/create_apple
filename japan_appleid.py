@@ -312,7 +312,7 @@ def register(email, passwd):
     chrome_options.add_experimental_option('excludeSwitches', ['enable-automation'])
     chrome_options.add_argument(u_lan)
     chrome_options.add_argument('accept-encoding="gzip, deflate, br"')
-    chrome_options.add_argument('--proxy-server=http://192.168.14.40:3131')
+    # chrome_options.add_argument('--proxy-server=http://192.168.14.40:3131')
     url = "https://appleid.apple.com/account#!&page=create"
     # driver = webdriver.Chrome(executable_path="C:\\Users\ceshi\Desktop\chrome\Chrome-bin\chromedriver.exe",
     #                           chrome_options=chrome_options)
