@@ -648,7 +648,7 @@ def register(email, passwd):
 if __name__ == '__main__':
     while 1:
 
-        info = [{'email': 'tetatmkspn@outlook.com', 'passwd': 'IEa53cIk'}, {'email': 'deausexyx@outlook.com', 'passwd': '2rL37guT'}, {'email': 'nickeaathx@outlook.com', 'passwd': 'wbG552Bl'}]
+        info = [{'email': 'fekneasbsuvxl@hotmail.com', 'passwd': 'VcT17GVq'}, {'email': 'dostetmbj@hotmail.com', 'passwd': 'Ezb06rd4'}, {'email': 'seighseshvavfgn@hotmail.com', 'passwd': '2iH339K1'}]
 
         for i in info:
             email = i.get('email')
